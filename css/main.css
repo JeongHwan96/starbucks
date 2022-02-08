@@ -1,0 +1,251 @@
+@charset "UTF-8";
+body { color: #333; font-size: 16px; font-weight: 400; line-height: 1.4; font-family: 'Nanum Gothic', sans-serif; height: 500px; }
+
+img { display: block; }
+
+li { list-style: none; }
+
+header { background: #f6f5ef; }
+
+header .inner { position: relative; width: 1100px; height: 120px; margin: 0 auto; }
+
+header .inner .menu { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; left: 500px; width: 50%; }
+
+header .inner .logo { position: absolute; height: 75px; top: 0; bottom: 0; margin: auto; }
+
+header .inner li { position: relative; }
+
+header .inner li:first-child:before { display: none; }
+
+header .inner .HeadMenu::before { content: " "; display: block; width: 1px; height: 12px; background-color: #e5e5e5; position: absolute; top: 0; bottom: 0; margin: auto; }
+
+header .inner a { text-decoration: none; font: normal 13px Avenir, Arial, georgia; color: #555; display: block; padding: 11px 20px; }
+
+header .inner a:hover { text-decoration: underline; }
+
+header .inner .search-icon { background: #fff; border: 1px solid #ccc; border-radius: 5px; position: absolute; left: 1000px; bottom: 88px; cursor: pointer; }
+
+header .inner .Mainmenu { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; left: 390px; width: 65%; }
+
+header .inner .Mainmenu .nav4:hover, header .inner .Mainmenu .nav5:hover, header .inner .Mainmenu .nav6:hover, header .inner .Mainmenu .nav7:hover, header .inner .Mainmenu .nav8:hover, header .inner .Mainmenu .nav9:hover { background-color: #2C2A29; height: 40px; color: #669900; }
+
+/*submenu*/
+.sub-menu { display: -webkit-box; display: -ms-flexbox; display: flex; background-color: #2C2A29; display: none; }
+
+.Show { display: inline-block; }
+
+.SubMenu, .SubMenu1 { position: relative; left: 360px; height: 390px; padding: 20px 50px; }
+
+.SubMenu1 { position: absolute; top: 350px; height: 160px; }
+
+/*공통*/
+.aCoffee, .aCoffeestroy, .aMycoffee, .aStarbucksReserve, .EspresoDrink, .aBestCoffee { color: #fff; font-size: 14px; font-weight: normal; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.aCoffeeBean, .aBia, .aOri, .aRoast, .aArabica, .aOne, .aClova, .aDecafain, .aReserve, .aDopi, .aEes, .aAmericano, .aMa, .aCapu, .aLatte, .aMo, .aList, .aCoffeePress, .aIce, .aCoffeeMaker, .aReserveStore { color: #999; font-size: 12px; font-weight: normal; }
+
+.MyCoffee { width: 127px; }
+
+/*main-visual*/
+.main-visual { background-image: url(../images/background.jpg); height: 646px; /*슬로건*/ /*자세히 보기*/ /*card*/ }
+
+.main-visual .slogan .Glazed { position: relative; left: 410px; top: 80px; }
+
+.main-visual .DetailBtn .ShowDetail { position: relative; top: 130px; left: 530px; text-decoration: none; color: #d5bea6; border: 2px solid #d5bea6; border-radius: 5px; padding: 10px 35px; font-size: 15px; line-height: 34px; }
+
+.main-visual .DetailBtn .ShowDetail:hover { background-color: rgba(255, 255, 255, 0.3); -webkit-transition: background-color .5s; transition: background-color .5s; text-decoration: underline; }
+
+.main-visual .Beverage { width: 100%; }
+
+.main-visual .Beverage .GreenCream { position: relative; left: 580px; top: 170px; width: 400px; -webkit-animation: fadein 1s; animation: fadein 1s; }
+
+.main-visual .Beverage .Black, .main-visual .Beverage .Apple { position: relative; width: 200px; }
+
+.main-visual .Beverage .Black { left: 960px; bottom: 220px; -webkit-animation: fadein 4s; animation: fadein 4s; }
+
+.main-visual .Beverage .Apple { left: 1190px; bottom: 581px; -webkit-animation: fadein 4s; animation: fadein 4s; }
+
+.main-visual .cardImg { position: relative; bottom: 1100px; left: 1500px; }
+
+/*notice*/
+.notice .noticebg { position: relative; left: 20%; background: url(../images/noticebg.jpg); height: 70px; width: 1280px; }
+
+.notice .noticebg .notice_ttl { background: url(../images/notice_ttl.png); background-size: 85px auto; background-repeat: no-repeat; height: 32px; left: 0; top: 20px; overflow: hidden; position: absolute; text-indent: -20000px; width: 85px; }
+
+.notice .noticebg .promotion_ttl { background: url(../images/prom_ttl.png); background-size: 150px auto; background-repeat: no-repeat; height: 32px; left: 950px; top: 23px; overflow: hidden; position: absolute; text-indent: -20000px; width: 213px; }
+
+.notice .btn_plus { position: relative; bottom: 60px; left: 1040px; width: 50px; }
+
+.notice .promotion_down { position: relative; bottom: 111px; left: 1550px; width: 50px; }
+
+.notice .noticleft { background: #111; left: 0px; position: relative; bottom: 170px; height: 70px; width: 20%; }
+
+.notice .noticright { background: #f6f5ef; left: 1661px; position: relative; bottom: 240px; height: 70px; width: 12.7%; }
+
+/*swiper*/
+.swiper-container.swiper-container-vertical { height: 50px; width: 40%; right: 270px; position: relative; top: 10px; }
+
+.swiper-wrapper { position: relative !important; height: 43px !important; width: 60% !important; top: 25px; left: 130px; }
+
+.choo, .runtime, .system, .gift { position: relative; }
+
+.choo a, .runtime a, .system a, .gift a { color: white; text-decoration: none; }
+
+.choo a:hover, .runtime a:hover, .system a:hover, .gift a:hover { text-decoration: underline; }
+
+.choo { bottom: 12px; }
+
+.runtime { bottom: 14px; }
+
+.system { bottom: 13px; }
+
+.gift { bottom: 13px; }
+
+/*starbucksRewards*/
+.starbucksRewards { position: relative; bottom: 240px; background-color: #1e3932; width: 100%; height: 230px; }
+
+.starbucksRewards .rewards-logo { position: relative; left: 500px; top: 40px; width: 180px; }
+
+strong { font-weight: bold; }
+
+.special { position: relative; line-height: 1.4px; left: 725px; bottom: 105px; font-size: 23px; color: #fff; width: 30%; }
+
+.member { color: #fff; width: 50%; position: relative; left: 726px; bottom: 73px; font-size: 16px; }
+
+.Nomember { color: #fff; width: 50%; position: relative; left: 726px; bottom: 70px; font-size: 16px; }
+
+.border-bottom { width: 45%; border-bottom: 1px solid #4b615b; position: relative; left: 725px; bottom: 50px; }
+
+.regi { position: relative; color: #fff; font-size: 14px; left: 724px; bottom: 30px; width: 32%; }
+
+.Cardregi { color: #fff; width: 50%; position: relative; left: 724px; bottom: 30px; font-size: 14px; }
+
+.regis:hover, .login:hover, .e-gift:hover { text-decoration: underline; }
+
+.regis { position: relative; bottom: 150px; left: 1360px; text-align: center; border: 1px solid #00704a; border-radius: 5px; background-color: #00704a; padding: 7px 7px; width: 5%; color: #fff; cursor: pointer; }
+
+.login { position: relative; left: 1488px; bottom: 190px; border: 2px solid #fff; border-radius: 5px; width: 4%; text-align: center; padding: 7px 7px; color: white; cursor: pointer; }
+
+.e-gift { position: relative; left: 1358px; bottom: 150px; border: 2px solid #fff; border-radius: 5px; width: 11%; text-align: center; padding: 7px 7px; color: white; cursor: pointer; }
+
+/*커피의 미래를 위한 스타벅스의 노력*/
+.backgroundImg { background: #eaeff9; height: 480px; position: relative; bottom: 239px; }
+
+.backgroundImgL { background: url(../images/2021_autumn_bean2_bg_l.png) no-repeat 50% 50%; height: 480px; position: relative; bottom: 719px; right: 830px; }
+
+.backgroundImgR { background: url(../images/2021_autumn_bean2_bg_r.png) no-repeat 50% 50%; height: 480px; position: relative; bottom: 1199px; left: 1690px; width: 20%; }
+
+.coffeeBean { position: relative; bottom: 1700px; width: 30%; }
+
+.Bean { position: relative; opacity: 0; top: 70px; left: 0px; width: 90%; }
+
+.BeanTxt { position: relative; left: 930px; bottom: 220px; opacity: 0; }
+
+.showDetail { opacity: 0; position: relative; left: 930px; bottom: 190px; color: #093132; border: 3px solid #4e4b4b; border-radius: 4px; padding: 6px 5px; width: 15%; text-align: center; font-size: 12px; cursor: pointer; }
+
+.showDetail:hover { color: white; background-color: #093132; cursor: pointer; -webkit-transition: 0.5s; transition: 0.5s; text-decoration: underline; }
+
+/*Bolivia*/
+.boliviaBackground { background-repeat: no-repeat; height: 400px; position: relative; bottom: 1751px; }
+
+.boliviaBackground .boliviaBG { position: relative; width: 100%; bottom: 44px; }
+
+.boliviaBackground .boliviaLogo { position: relative; left: 500px; bottom: 362px; z-index: 1; }
+
+.boliviaBackground .boliviaSHowDetail { position: relative; bottom: 330px; left: 795px; border: 3px solid #815932; border-radius: 5px; width: 90px; text-align: center; padding: 5px 5px; font-size: 13px; color: #815932; cursor: pointer; z-index: 1; }
+
+.boliviaBackground .boliviaSHowDetail:hover { background-color: #815932; color: white; text-decoration: underline; -webkit-transition: 0.5s; transition: 0.5s; }
+
+/*PickYour*/
+.PickYourBackground { background: url(../images/tum.jpg) center center fixed no-repeat; background-repeat: no-repeat; background-position: left; background-size: 2114px; height: 680px; position: relative; bottom: 1772px; background-attachment: fixed; }
+
+.PickYourBackground .Pickyour { position: relative; top: 100px; left: 580px; width: 230px; z-index: 1; }
+
+.PickYourBackground .dayang { position: relative; top: 140px; left: 470px; width: 340px; }
+
+.PickYourBackground .autumn_fav { position: relative; left: 1000px; bottom: 263px; width: 630px; }
+
+.PickYourBackground .pickyourShowDetail { position: relative; bottom: 250px; left: 700px; border: 3px solid white; border-radius: 5px; width: 90px; text-align: center; padding: 7px 7px; font-size: 13px; color: white; cursor: pointer; }
+
+.PickYourBackground .pickyourShowDetail:hover { color: black; text-decoration: underline; background-color: white; -webkit-transition: 0.7s; transition: 0.7s; }
+
+/*ReserveMagazine*/
+.ReserveMagazine { position: relative; bottom: 1751px; background-color: white; height: 650px; z-index: 1; }
+
+.ReserveMagazine .magazineImg { position: relative; top: 90px; left: 410px; width: 400px; z-index: 1; }
+
+.ReserveMagazine .explore { width: 410px; font-size: 19px; color: black; position: relative; left: 1300px; bottom: 123px; opacity: 0; letter-spacing: 10px; font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica; }
+
+.ReserveMagazine .ReserveMagazineTxT { position: relative; bottom: 200px; height: 80px; left: 1300px; opacity: 0; }
+
+.ReserveMagazine .border-bottom { border-bottom: 1px solid #cccccb; width: 50%; position: relative; left: 680px; bottom: 167px; }
+
+.ReserveMagazine .border-right { border-right: 1px solid #cccccb; height: 380px; width: 280px; position: relative; left: 570px; bottom: 417px; }
+
+/*store*/
+.store { background: url(../images/store_bg.jpg); position: relative; bottom: 1751px; height: 400px; }
+
+.store .storeimg1 { position: relative; top: 150px; left: 680px; z-index: 1; }
+
+.store .storeimg2 { position: relative; bottom: 228px; left: 450px; }
+
+.store .storeimg3 { position: relative; bottom: 600px; left: 840px; }
+
+.store .storeimg4 { position: relative; bottom: 384px; left: 1380px; }
+
+.store .storeTxt1 { opacity: 0; width: 400px; position: relative; bottom: 670px; left: 1590px; font-size: 20px; }
+
+.store .storeTxt2 { opacity: 0; width: 400px; position: relative; bottom: 655px; left: 1560px; font-size: 20px; }
+
+.store .StoreShowDetail { opacity: 0; position: relative; left: 1564px; bottom: 630px; color: #222; border: 2.5px solid #4e4b4b; border-radius: 4px; padding: 7px 5px; width: 5%; text-align: center; font-size: 15px; cursor: pointer; font-family: 'nbg', '맑은 고딕', HelveticaNeue, DroidSans, Sans-serif, Helvetica; }
+
+.store .StoreShowDetail:hover { color: white; text-decoration: underline; background-color: black; -webkit-transition: 0.7s; transition: 0.7s; }
+
+/*footer*/
+.footer { font-family: arial, HelveticaNeue, DroidSans, Sans-serif, Helvetica; background-color: #2C2A29; height: 600px; position: relative; bottom: 1752px; /*company*/ /*sales*/ /*partnership*/ /*Online*/ }
+
+.footer .one, .footer .companymission, .footer .starbucksintroduction, .footer .newsroom, .footer .worldstarbucks, .footer .globalnewsroom, .footer .buy { line-height: 25px; font-size: 13px; }
+
+.footer .company { position: relative; left: 390px; top: 46px; width: 100px; }
+
+.footer .company, .footer .corporatesales, .footer .buy, .footer .partnerregi, .footer .new { color: white; line-height: 35px; }
+
+.footer .company .Licompany, .footer .corporatesales .Licompany, .footer .buy .Licompany, .footer .partnerregi .Licompany, .footer .new .Licompany { font-size: 18px; }
+
+.footer .sales { position: relative; left: 588px; bottom: 135px; width: 180px; }
+
+.footer .sales .corporatesales { font-size: 18px; }
+
+.footer .partnership { position: relative; left: 870px; bottom: 207px; font-size: 18px; width: 150px; }
+
+.footer .new, .footer .partnerregi { font-size: 13px; line-height: 25px; }
+
+.footer .Online { position: relative; left: 1100px; bottom: 292px; color: white; line-height: 35px; width: 190px; }
+
+.footer .facebook, .footer .twitter, .footer .youtube, .footer .instargram { line-height: 25px; font-size: 13px; }
+
+/*Recruit*/
+.Recuit { position: relative; left: 250px; bottom: 132px; width: 100px; }
+
+.Recuit.RECRUIT { color: white; line-height: 35px; }
+
+.reintro, .reregi { line-height: 25px; font-size: 13px; }
+
+/*footerLogo*/
+.footerLogo { position: relative; left: 480px; bottom: 200px; }
+
+/*reword*/
+.reword { display: -webkit-box; display: -ms-flexbox; display: flex; background-color: #282828; height: 141px; position: relative; bottom: 2040px; }
+
+.reword .footer_award1, .reword .footer_award2, .reword .footer_award3, .reword .footer_award4, .reword .footer_award5, .reword .footer_award6 { position: relative; top: 40px; left: 400px; }
+
+/*animation*/
+@-webkit-keyframes fadein { from { left: 1500px; }
+  to { left: 900px; } }
+@keyframes fadein { from { left: 1500px; }
+  to { left: 900px; } }
+
+@-webkit-keyframes fadeout { from { opacity: 1; }
+  to { opacity: 0; } }
+
+@keyframes fadeout { from { opacity: 1; }
+  to { opacity: 0; } }
